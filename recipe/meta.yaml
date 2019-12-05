@@ -1,4 +1,4 @@
-{% set version = '2.0.2' %}
+{% set version = "2.1.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/piecewiseSEM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/piecewiseSEM/piecewiseSEM_{{ version }}.tar.gz
-  sha256: 5d55843b6c4896fa6a93fba82b86ac2793b79be724e99bb262754df818487f1f
+  sha256: d06405d6f3089a674a87468347e700f0c726edb7930531d24b3e0378fd1cf4b6
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
