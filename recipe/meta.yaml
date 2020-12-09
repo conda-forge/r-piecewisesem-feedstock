@@ -24,22 +24,24 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
   host:
-    - r-base
+    - r-base >=4.0.0
     - r-diagrammer
     - r-mass
     - r-car
     - r-emmeans
     - r-igraph
     - r-lme4
+    - r-multcomp
     - r-nlme
   run:
-    - r-base
+    - r-base >=4.0.0
     - r-diagrammer
     - r-mass
     - r-car
     - r-emmeans
     - r-igraph
     - r-lme4
+    - r-multcomp
     - r-nlme
 
 test:
