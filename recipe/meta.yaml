@@ -1,4 +1,4 @@
-{% set version = '2.1.0' %}
+{% set version = "2.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/piecewiseSEM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/piecewiseSEM/piecewiseSEM_{{ version }}.tar.gz
-  sha256: d06405d6f3089a674a87468347e700f0c726edb7930531d24b3e0378fd1cf4b6
+  sha256: 66e09b9e5218b07a678e1b90ddda3bf4fa13cbabd2e5ea1f23d7889e5b60bce3
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -50,13 +50,10 @@ test:
 about:
   home: https://github.com/jslefche/
   license: GPL-3
-  summary: Implements piecewise structural equation modeling from a single list of structural
-    equations, with new methods for non-linear, latent, and composite variables, standardized
-    coefficients, query-based prediction and indirect effects. See <http://jslefche.github.io/piecewiseSEM/>
-    for more.
+  summary: Implements piecewise structural equation modeling from a single list of structural equations, with new methods for non-linear, latent, and composite variables, standardized coefficients, query-based prediction and indirect effects. See <http://jslefche.github.io/piecewiseSEM/> for more.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
