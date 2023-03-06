@@ -1,13 +1,17 @@
-About r-piecewisesem
-====================
-
-Home: https://github.com/jslefche/
-
-Package license: GPL-3.0-only
+About r-piecewisesem-feedstock
+==============================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-piecewisesem-feedstock/blob/main/LICENSE.txt)
 
+Home: https://jslefche.github.io/piecewiseSEM/
+
+Package license: GPL-3.0-only
+
 Summary: Implements piecewise structural equation modeling from a single list of structural equations, with new methods for non-linear, latent, and composite variables, standardized coefficients, query-based prediction and indirect effects. See <http://jslefche.github.io/piecewiseSEM/> for more.
+
+Development: https://github.com/jslefche/piecewiseSEM/
+
+Documentation: https://jslefche.github.io/piecewiseSEM/reference/index.html
 
 Current build status
 ====================
