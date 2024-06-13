@@ -25,26 +25,26 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base >=4.2.0
-    - r-car
     - r-diagrammer
+    - r-mass
+    - r-mumin
+    - r-car
     - r-emmeans
     - r-igraph
     - r-lme4
-    - r-mass
     - r-multcomp
-    - r-mumin
     - r-nlme
     - r-performance
   run:
     - r-base >=4.2.0
-    - r-car
     - r-diagrammer
+    - r-mass
+    - r-mumin
+    - r-car
     - r-emmeans
     - r-igraph
     - r-lme4
-    - r-mass
     - r-multcomp
-    - r-mumin
     - r-nlme
     - r-performance
 
